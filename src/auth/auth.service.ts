@@ -28,6 +28,11 @@ export class AuthService {
         status: 'success',
         token,
       };
+    } else {
+      return {
+        status: 'fail',
+        message: 'Invelid Password!!',
+      };
     }
   }
 
